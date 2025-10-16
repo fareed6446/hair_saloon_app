@@ -1,1 +1,10 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
 #include "Generated.xcconfig"
+
+// Hair Salon App Debug Configuration
+FLUTTER_BUILD_MODE = debug
+FLUTTER_BUILD_NAME = 1.0.0
+FLUTTER_BUILD_NUMBER = 1
+PRODUCT_BUNDLE_IDENTIFIER = com.hairsalon.app
+IPHONEOS_DEPLOYMENT_TARGET = 13.0
+ENABLE_BITCODE = NO

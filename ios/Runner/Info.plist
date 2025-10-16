@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Hair Salon App</string>
+	<string>Hair Salon</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,5 +45,65 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	
+	<!-- Hair Salon App Specific Permissions -->
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>This app sends notifications for booking reminders and promotional offers.</string>
+	
+	<key>NSCameraUsageDescription</key>
+	<string>This app may use the camera to take photos for profile pictures or service documentation.</string>
+	
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app may access your photo library to select profile pictures or service images.</string>
+	
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app uses location to find nearby hair salons and provide location-based services.</string>
+	
+	<!-- Network Security -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	
+	<!-- Background Modes -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>background-processing</string>
+		<string>background-fetch</string>
+	</array>
+	
+	<!-- Supported Interface Orientations -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	
+	<!-- iPad Support -->
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	
+	<!-- App Category -->
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.lifestyle</string>
+	
+	<!-- Minimum iOS Version -->
+	<key>MinimumOSVersion</key>
+	<string>13.0</string>
 </dict>
 </plist>
