@@ -65,3 +65,4 @@ echo "📱 To build for release:"
 echo "   flutter build ios --release"
 echo ""
 echo "Happy coding! 💈✨"
+
